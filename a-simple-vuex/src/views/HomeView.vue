@@ -11,6 +11,7 @@
 <script>
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
+import buttons from '../components/Buttons.vue'
 
 export default {
   name: 'HomeView',
@@ -33,7 +34,8 @@ export default {
   components: {
     'counter': require('@/components/Counter.vue').default,
     'counter-squared': require('@/components/CounterSquared.vue').default,
-    'buttons': require('@/components/Buttons.vue').default,
+    // 'buttons': require('@/components/Buttons.vue').default,
+    buttons,
     'colorCode': require('@/components/ColorCode.vue').default,
   },
 }
